@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styletest.css">
+</head>
+<body>
+<div class="container">
+    <div class="info">
+        <table>
+            <tr>
+                <th>Всего вопросов</th>
+                <th>Отвечено правильно</th>
+                <th>Не отвечено</th>
+            </tr>
+            <tr>
+                <td id="allQuestion">0</td>
+                <td id="trueQuestion">0</td>
+                <td id="falseQuestion">0</td>
+            </tr>
+        </table>
+        <input id="startTest" class="btnStart" type="button" value="Начать тест" disabled>
+        <input id="finishTest" class="btnFinish" type="button" value="Закончить тест" disabled>
+        <input id="clearQuestion" class="clearQuestion" type="button" value="Удалить вопросы" disabled>
+        <div class="infoTimer">
+            <label for="infoChkTime" class="lbTime">Вкл. таймер</label>
+            <input type="checkbox" id="infoChkTime" class="infoChkTime">
+        </div>
+    </div>
+    <div id="content" class="content">
+
+
+    </div>
+    <div class="blockCreate">
+        <h2 class="titleQuestion">Введите вопрос и варианты ответа для теста</h2>
+        <form class="newQuestion" action="">
+            <label id="idQuestion" class="formQuestion" for="question">Введите вопрос: </label>
+            <input id="question" class="textForm question" type="text">
+            <div id="blokAnswers" class="blokAnswers">
+                <div id="blockAnsw-1" class="answer bkAnsver">
+                    <label class="lbAnswer" for="qAnsw-1">Ответ 1:</label>
+                    <input id="qAnsw-1" data-id="id-1" class="textForm answer" type="text">
+                    <input id="qChk-1" data-chk="chk-1" class="check" type="checkbox">
+                </div>
+                <div id="blockAnsw-2" class="answer bkAnsver">
+                    <label class="lbAnswer" for="qAnsw-2">Ответ 2:</label>
+                    <input id="qAnsw-2" data-id="id-2" class="textForm answer" type="text">
+                    <input id="qChk-2" data-chk="chk-2" class="check" type="checkbox">
+                </div>
+
+            </div>
+
+
+        </form>
+        <input id="btnAddAnswer" class="btnAddAnswer" type="button" value="Добавить вариант ответа">
+        <input id="btnMoveAnswer" class="btnMoveAnswer" type="button" value="Удалить вариант ответа">
+        <input id="btnAddQuestion" class="btnAddQuestion" type="button" value="Добавить вопрос в тест">
+
+    </div>
+</div>
+<div class="timerContent timerContentHide">
+    <div class="hours" id="hours">
+        <input id="tHour" class="tHour" type="test" placeholder="0" >
+    </div>
+    <div class="points ">:</div>
+    <div class="minutes" id="minutes">
+        <input id="tMinute" class="tMinute" type="text" placeholder="0" >
+    </div>
+    <div class="points ">:</div>
+    <div class="seconds" id="seconds">
+        <input id="tSecond" class="tSecond" type="text" placeholder="0" >
+    </div>
+</div>
+
+
+<script src="jstest.js"></script>
+</body>
+</html>

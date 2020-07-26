@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px 50px;
+    background-color: rgb(255,250,174);
+    border: 1px solid #000;
+    width: 1000px;
+    min-height: 50px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+.content{
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.blockCreate{
+    width: 100%;
+    border: 1px solid #000;
+    min-height: 200px;
+    padding: 10px;
+}
+.titleQuestion{
+    margin-bottom: 20px;
+}
+.formQuestion{
+    float: left;
+    width: 20%;
+}
+.question{
+    width: 80px;
+    float: right;
+}
+.blokAnswers{
+    clear: both;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.answer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+
+.lbAnswer{
+    width: 20%;
+}
+.textForm{
+    width: 80%;
+}
+.check{
+    margin-top: 10px;
+}
+.textForm{
+    padding: 5px;
+    height: 25px;
+}
+.btnAddAnswer,.btnMoveAnswer{
+    margin-right: 50px;
+}
+.content{
+    padding: 10px;
+}
+.testQuestion{
+    margin-bottom: 20px;
+}
+.info{
+    margin-bottom: 20px;
+    display: flex;
+}
+.info table{
+    border: 1px solid #000;
+    margin-right: 25px;
+}
+.infoTimer{
+    margin-left: 5px;
+    padding: 9px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoChkTime{
+    width: 20px;
+}
+.btnStart,.btnFinish,.clearQuestion{
+    margin-right: 5px;
+    width: 150px;
+}
+.btnStart:hover,.btnFinish:hover,.clearQuestion:hover{
+    cursor: pointer;
+}
+.timerContent{
+    background-color: rgb(255,250,174);
+    border: 1px solid #000;
+    width: 500px;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.timerContentHide{
+    display: none;
+}
+.hours,.minutes,.seconds{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tHour,.tMinute,.tSecond{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+.points{
+    width: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+.pointHide{
+    visibility: hidden;
+}
